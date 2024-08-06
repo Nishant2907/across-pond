@@ -15,7 +15,7 @@ const OurServices = () => {
       }}
       className="p-8 "
     >
-      <div className="mb-8 mr-8 text-left mt-14 ml-14 text-lg font-light">
+      <div className="mb-8 mr-6 text-left mt-14 ml-16 text-lg font-light">
         <p className="mb-8 mr-8">
           A future & battle ready Finance Organisation needs a new operating
           model, with not only new Finance Talent Capabilities, but a digital
@@ -30,13 +30,13 @@ const OurServices = () => {
           & Team Capabilities.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-1 mb-8 ml-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 mb-8 ml-20 ">
         <div className="text-left text-xl font-light ">
           <img
             src={our}
             alt="Our Services"
             className="mb-4"
-            style={{ width: "90%", height: "80%" }}
+            style={{ width: "86%", height: "86%" }}
           />
           <p className="font-bold">Our Services</p>
         </div>
@@ -45,16 +45,16 @@ const OurServices = () => {
             src={technology}
             alt="Technology"
             className="mb-4"
-            style={{ width: "90%", height: "80%" }}
+            style={{ width: "86%", height: "86%" }}
           />
           <p className="font-bold">Technology</p>
         </div>
-        <div className="text-left text-xl font-light">
+        <div className="text-left text-xl font-light ">
           <img
             src={team}
             alt="Team"
             className="mb-4"
-            style={{ width: "90%", height: "80%" }}
+            style={{ width: "86%", height: "86%" }}
           />
           <p className="font-bold">Team</p>
         </div>
