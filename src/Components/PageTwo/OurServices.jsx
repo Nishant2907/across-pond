@@ -35,8 +35,7 @@ const OurServices = () => {
           <img
             src={our}
             alt="Our Services"
-            className="mb-4 object-cover h-full w-full" 
-            
+            className="mb-4 object-cover h-full w-full"
           />
           <p className="font-bold">Our Services</p>
         </div>
@@ -45,7 +44,6 @@ const OurServices = () => {
             src={technology}
             alt="Technology"
             className="mb-4 object-cover h-full w-full"
-           
           />
           <p className="font-bold">Technology</p>
         </div>
@@ -54,7 +52,6 @@ const OurServices = () => {
             src={team}
             alt="Team"
             className="mb-4 object-cover h-full w-full"
-           
           />
           <p className="font-bold">Team</p>
         </div>
