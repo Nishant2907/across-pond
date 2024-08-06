@@ -1,58 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className=" p-4">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="absolute top-0 left-0 w-full z-50">
+      <div className="container mx-auto flex justify-between items-center m-6">
         <div className="flex items-center">
-          <img src={logo} alt="" className="h-8 w-8 mr-2" />
+          <img src={logo} alt="Logo" className="h-8 mr-2" />
         </div>
-        <div className="hidden md:flex space-x-4">
-          <a
-            href="#"
-            className="text-gray-800 hover:text-gray-800 font-bold px-6 "
-          >
+        <div className="hidden md:flex space-x-4 px-6 bg-blue">
+          <a href="#" className="text-white  font-weight-400 ">
             WORK
           </a>
-          <a
-            href="#"
-            className="text-gray-800 hover:text-gray-800 font-bold px-6"
-          >
+          <a href="#" className="text-white  px-6 font-weight-400">
             WHAT WE DO
           </a>
-          <a
-            href="#"
-            className="text-gray-800 hover:text-gray-800 font-bold px-6"
-          >
+          <a href="#" className="text-white  px-6 font-weight-400">
             TEAM
           </a>
-          <a
-            href="#"
-            className="text-gray-800 hover:text-gray-800 font-bold px-6"
-          >
+          <a href="#" className="text-white  px-6 font-weight-400">
             ABOUT
           </a>
-          <a
-            href="#"
-            className="text-gray-800 hover:text-gray-800 font-bold px-6"
-          >
+          <a href="#" className="text-white   px-6 font-weight-400 ">
             INSIGHTS
           </a>
-          <a
-            href="#"
-            className="text-gray-800 hover:text-gray-800 font-bold px-6"
-          >
+          <a href="#" className="text-white px-6 font-weight-400">
             LET'S TALK
           </a>
         </div>
         <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-300 hover:text-white focus:outline-none"
-          >
+          <button className="text-white hover:text-gray-200 focus:outline-none">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -70,28 +47,6 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {isOpen && (
-        <div className="md:hidden">
-          <a href="#" className="block text-gray-800 hover:text-gray-800 ">
-            WORK
-          </a>
-          <a href="#" className="block text-gray-800 hover:text-gray-800 ">
-            TEAM
-          </a>
-          <a href="#" className="block text-gray-800 hover:text-gray-800 ">
-            ABOUT
-          </a>
-          <a href="#" className="block text-gray-800 hover:text-gray-800 ">
-            INSIGHTS
-          </a>
-          <a href="#" className="block text-gray-800 hover:text-gray-800 ">
-            LET'S TALK
-          </a>
-          <a href="#" className="block text-gray-800 hover:text-gray-800 ">
-            WHAT WE DO
-          </a>
-        </div>
-      )}
     </nav>
   );
 };
