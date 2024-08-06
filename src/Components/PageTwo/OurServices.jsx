@@ -30,31 +30,31 @@ const OurServices = () => {
           & Team Capabilities.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 mb-8 ml-20 ">
-        <div className="text-left text-xl font-light ">
+      <div className="grid grid-cols-1 md:grid-cols-3 mb-8 lg:ml-20 mx-8 gap-6 ">
+        <div className="text-left text-xl font-light my-3 ">
           <img
             src={our}
             alt="Our Services"
-            className="mb-4"
-            style={{ width: "86%", height: "86%" }}
+            className="mb-4 object-cover h-full w-full" 
+            
           />
           <p className="font-bold">Our Services</p>
         </div>
-        <div className="text-left text-xl font-light">
+        <div className="text-left text-xl font-light my-3">
           <img
             src={technology}
             alt="Technology"
-            className="mb-4"
-            style={{ width: "86%", height: "86%" }}
+            className="mb-4 object-cover h-full w-full"
+           
           />
           <p className="font-bold">Technology</p>
         </div>
-        <div className="text-left text-xl font-light ">
+        <div className="text-left text-xl font-light my-3">
           <img
             src={team}
             alt="Team"
-            className="mb-4"
-            style={{ width: "86%", height: "86%" }}
+            className="mb-4 object-cover h-full w-full"
+           
           />
           <p className="font-bold">Team</p>
         </div>

@@ -4,7 +4,7 @@ import React from "react";
 const PerformanceExcellence = () => {
   return (
     <div className="bg-[#122a47] text-slate-100 p-10 flex flex-col justify-center mx-auto max-w-8xl">
-      <div className="mx-8 py-16">
+      <div className="lg:mx-8 py-16 m-0 ">
         <h2 className="text-2xl font-bold mb-4 text-left mt-4 ml-8">
           Barriers to achieving Performance Excellence
         </h2>
@@ -27,8 +27,7 @@ const PerformanceExcellence = () => {
               {[
                 { activity: "Driving outcomes with Real-time insights & forecasts to engage stakeholders", current: 3, ideal: 16 },
                 { activity: "Budgeting, Financial Performance Reporting & Analytics", current: 14, ideal: 5 },
-                { activity: "Book close Procedures, Journal Entry, Financial Statements, Audit Schedules", current: 16, ideal: 7 },
-                { activity: "Transactions Processing (AP, AR, T&E, Tax, etc)", current: 15, ideal: 7 },
+                { activity: "Book close Procedures, Journal Entry, Financial Statements, Audit Schedules, Transactions Processing (AP, AR, T&E, Tax, etc)", current: 16, ideal: 7 },
               ].map((row, index) => (
                 <tr key={index}>
                   <td className="border-t border-r border-white px-6 py-3 w-1/3 text-lg font-light p-0.5">{row.activity}</td>
@@ -39,10 +38,10 @@ const PerformanceExcellence = () => {
                       ))}
                     </div>
                   </td>
-                  <td className="border-t border-white px-6 py-3 w-1/3">
+                  <td className="border-t border-white px-6 py-3 w-1/3 " >
                     <div className="flex flex-wrap justify-center items-center">
                       {Array(row.ideal).fill(0).map((_, i) => (
-                        <span key={i} className="w-4 h-4 bg-white rounded-full mr-2 mb-4 inline-block"></span>
+                        <span key={i} className="w-4 h-4 bg-white rounded-full mr-2 mb-4 inline-block "></span>
                       ))}
                     </div>
                   </td>
@@ -56,7 +55,7 @@ const PerformanceExcellence = () => {
           processing & controlling fragmented data manually.
         </p>
       </div>
-      <div style={{ color: 'white', height: '100vh' }} className="p-8">
+      <div style={{ color: 'white'}} className="p-8">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-8">
         <div className="flex flex-col items-center">
           <div className="w-48 h-48 bg-white text-black flex items-center justify-center text-bold rounded-full mb-2">
