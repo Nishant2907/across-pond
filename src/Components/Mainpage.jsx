@@ -1,11 +1,11 @@
 // src/MainPage.js
 import React from "react";
 import video from "../assets/Catapult.mp4";
-import Navbar from "./Nav";
+
 
 const MainPage = () => {
   return (
-    <div className="relative w-full text-white h-40 sm:h-72 md:h-80 lg:h-88 xl:h-[40rem] flex items-center justify-center">
+    <div className="relative w-full text-white h-[60vh] sm:h-[80vh] md:h-[90vh] lg:h-[88vh] xl:h-[40rem] flex items-center justify-center">
       <div className="absolute inset-0">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
